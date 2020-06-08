@@ -10,6 +10,12 @@ https://khmergeek-speech-chrome-sample.herokuapp.com/
     $ node server.js
 
 
+## Note
+
+
+It seems that the recognition accuracy of Cambodian language is not so good. To actually improve the quality, I think you need a mechanism to parse unnecessary character strings. This app is made to share knowledge. Please understand that point.
+
+
 ## License
 
 សូមប្រើកម្មវិធីនេះដោយសេរី។ អ្នកអាចកែប្រែបាន។ អ្នកអាចប្រើកម្មវិធីនេះនៅកន្លែងធ្វើការ។ សូមសិក្សាដោយសេរី។
