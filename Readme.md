@@ -1,5 +1,8 @@
-# XXXXXXX
-XXXXXXXXX
+# khmergeek-speech-chrome-sample
+speech-chrome-khmer sample
+
+demo
+https://khmergeek-speech-chrome-sample.herokuapp.com/
 
 ## Installation
 

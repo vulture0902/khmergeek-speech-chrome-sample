@@ -2,9 +2,9 @@ body {
   padding: 20px 40px;
 }
 .catch-voice{
-  width: 300px;
+  width: 100%;
   height: 500px;
-  overflow: scroll;
+  overflow-y: scroll;
   border: 1px solid black;
   background-color: gray;
   color: black;
@@ -19,3 +19,10 @@ body {
 .bg-purple { background-color: purple; }
 .bg-gray   { background-color: gray;   }
 
+.bg-love   {
+  background: linear-gradient(135deg, #E83A25 1.2em, rgba(232, 58, 37, 0) 1.2em) 0 4em, linear-gradient(-135deg, #E83A25 1.2em, rgba(232, 58, 37, 0) 1.2em) 0 4em, radial-gradient(circle at 7.16em 7.4em, #E83A25 1.02em, rgba(232, 58, 37, 0) 1.044em) 0 -4em, radial-gradient(circle at 0.84em 7.4em, #E83A25 1.02em, rgba(232, 58, 37, 0) 1.044em) 0 -4em, linear-gradient(135deg, #98CC96 1.2em, rgba(152, 204, 150, 0) 1.2em) 4em 0, linear-gradient(-135deg, #98CC96 1.2em, rgba(152, 204, 150, 0) 1.2em) 4em 0, radial-gradient(circle at 7.16em 7.4em, #98CC96 1.02em, rgba(152, 204, 150, 0) 1.044em) 4em 0, radial-gradient(circle at 0.84em 7.4em, #98CC96 1.02em, rgba(152, 204, 150, 0) 1.044em) 4em 0;
+  background-size: 8em 8em;
+  background-color: #FFE9A3;
+  background-repeat: repeat;
+  font: 16px/2 'Trebuchet MS', Verdana, sans-serif;
+}

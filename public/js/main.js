@@ -7,6 +7,7 @@ var color_04 = 'បៃតង';
 var color_05 = 'ខ្មៅ' ;
 var color_06 = 'ស';
 var color_07 = 'ស្វាយ';
+var color_08 = 'ស្នេហា';
 
 var recognition = new webkitSpeechRecognition();
 recognition.continuous = true;
@@ -17,17 +18,14 @@ recognition.start();
 var parse = function(str_in) {
   var out_str = '';
   var str = str_in.replace('ពណ៌', "");
-  if (str.indexOf('ៅ') != -1){
-    out_str = color_05;
-  }
-  else if (str.indexOf('ខ្ម') != -1){
-    out_str = color_05;
-  }
-  else if (str.indexOf('3') != -1){
+  if (str.indexOf('3') != -1){
     out_str = color_04;
   }
   else if (str.indexOf('បី') != -1){
     out_str = color_04;
+  }
+  else if (str.indexOf('ស្នេហ៍') != -1){
+    out_str = color_08;
   }
   else{
     out_str = str;
@@ -53,6 +51,8 @@ var check_color = function(str_in) {
       out_str = 'white';   break;
     case color_07:
       out_str = 'purple';  break;
+    case color_08:
+      out_str = 'love';    break;
     default: 
       out_str = 'gray';
   }
@@ -64,10 +64,7 @@ recognition.onresult = function(event){
   var resultsLength = event.results.length -1 ;
   var ArrayLength = event.results[resultsLength].length -1;
   var saidWord = event.results[resultsLength][ArrayLength].transcript;
-  //var checked_color = check_color(saidWord);
   latest_word_elm.innerHTML = '<p>' + saidWord + '</p>' + latest_word_elm.innerHTML;
-  //document.body.classname = '';
-  //document.body.classList.add('bg-' + checked_color);
 }
 
 recognition.onerror = function(event){
